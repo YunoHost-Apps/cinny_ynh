@@ -1,12 +1,7 @@
-* Any known limitations, constrains or stuff not working, such as (but not limited to):
-    * requiring a full dedicated domain ?
-    * architectures not supported ?
-    * not-working single-sign on or LDAP integration ?
-    * the app requires an important amount of RAM / disk / .. to install or to work properly
-    * etc...
+* The app only supports being installed at the root of a domain. This is an upstream limitation.
+    * ok: mydomain.org/
+    * ok: cinny.mydomain.org/
+    * NOT ok: mydomain.org/cinny
 
-* Other infos that people should be aware of, such as:
-    * any specific step to perform after installing (such as manually finishing the install, specific admin credentials, ...)
-    * how to configure / administrate the application if it ain't obvious
-    * upgrade process / specificities / things to be aware of ?
-    * security considerations ?
+* There's no LDAP support (and never will be).
+* Cinny only is a client, you need to have an account on a server already (see the Synapse Yunohost app)
