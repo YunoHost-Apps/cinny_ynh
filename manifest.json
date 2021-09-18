@@ -37,8 +37,12 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/cinny",
-                "default": "/cinny"
+                "example": "/",
+                "default": "/",
+                "help": {
+                    "en": "Cinny only supports to be installed on / for now.",
+                    "fr": "Cinny ne peut être installé que à la racine pour le moment."
+                }
             },
             {
                 "name": "is_public",
