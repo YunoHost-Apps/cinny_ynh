@@ -11,12 +11,12 @@
     "upstream": {
         "license": "MIT",
         "website": "https://cinny.in",
-        "demo": "https://app.cinny.in/",
-        "admindoc": "https://yunohost.org/packaging_apps",
-        "userdoc": "https://yunohost.org/apps",
+        "demo": "https://app.cinny.in",
+        "admindoc": "https://cinny.in",
+        "userdoc": "https://cinny.in",
         "code": "https://github.com/ajbura/cinny"
     },
-    "license": "free",
+    "license": "GPL-3.0",
     "maintainer": {
         "name": "Salamandar",
         "email": "felix@piedallu.me"
@@ -44,7 +44,11 @@
             {
                 "name": "is_public",
                 "type": "boolean",
-                "default": true
+                "default": true,
+                "help": {
+                    "en": "Should the app be accessible to users not logged into Yunohost",
+                    "fr": "L'app devrait-elle être accessible aux utilisateurs Yunohost"
+                }
             }
         ]
     }
