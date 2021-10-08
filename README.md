@@ -24,7 +24,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 - Matrix Spaces support
 
 
-**Shipped version:** 1.3.1~ynh2
+**Shipped version:** 1.3.2~ynh1
 
 **Demo:** https://app.cinny.in
 
