@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/ajbura/cinny/releases/download/v1.3.1/cinny-v1.3.1.tar.gz
-SOURCE_SUM=41622f5216d99d743fc79b0a87e6d8d41eac0bfeec662be6cea76efdf54a0ffe
+SOURCE_URL=https://github.com/ajbura/cinny/releases/download/v1.3.2/cinny-v1.3.2.tar.gz
+SOURCE_SUM=1f1ac04f75a05ac1a0341db7eb6ea38d0e0f7d0574bead34e6f85baf3b1f7277
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
