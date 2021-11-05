@@ -62,12 +62,6 @@ then
 	change_path=1
 fi
 
-
-if ynh_webpath_is_domain_root -p "$new_path"; then
-	ynh_print_err "Cinny can only be installed on a domain root !"
-	ynh_die "Aborting."
-fi
-
 #=================================================
 # STANDARD MODIFICATIONS
 #=================================================
