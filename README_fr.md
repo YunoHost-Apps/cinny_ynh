@@ -1,6 +1,6 @@
 # Cinny pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny) ![](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)  
+[![Niveau d'intégration](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny) ![](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)
 [![Installer Cinny avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cinny)
 
 *[Read this readme in english.](./README.md)*
@@ -20,7 +20,7 @@ Un client matrix orienté simplicité, élégance et sécurité.
 - Support des "Espaces" Matrix
 
 
-**Version incluse :** 1.4.0~ynh1
+**Version incluse :** 1.5.0~ynh1
 
 **Démo :** https://app.cinny.in
 
