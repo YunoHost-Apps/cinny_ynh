@@ -25,7 +25,7 @@ assets=($(curl --silent "https://api.github.com/repos/$repo/releases" | jq -r '[
 
 # Later down the script, we assume the version has only digits and dots
 # Sometimes the release name starts with a "v", so let's filter it out.
-# You may need more tweaks here if the upstream repository has different naming conventions. 
+# You may need more tweaks here if the upstream repository has different naming conventions.
 if [[ ${version:0:1} == "v" || ${version:0:1} == "V" ]]; then
     version=${version:1}
 fi
@@ -58,7 +58,7 @@ echo "${#assets[@]} available asset(s)"
 # Here is an example for Grav, it has to be adapted in accordance with how the upstream releases look like.
 
 # Let's loop over the array of assets URLs
-for asset_url in ${assets[@]}; do
+for asset_url in "${assets[@]}"; do
 
 echo "Handling asset at $asset_url"
 
@@ -66,9 +66,8 @@ echo "Handling asset at $asset_url"
 # Here we base the source file name upon a unique keyword in the assets url (admin vs. update)
 # Leave $src empty to ignore the asset
 case $asset_url in
-  *"cinny-v"*".tar.gz")  
-    src="app"
-    ;;
+    *"cinny-v"*".tar.gz") src="app" ;;
+    *) src="";;
 esac
 
 # If $src is not empty, let's process the asset
@@ -87,9 +86,9 @@ rm -rf $tempdir
 
 # Get extension
 if [[ $filename == *.tar.gz ]]; then
-  extension=tar.gz
+    extension=tar.gz
 else
-  extension=${filename##*.}
+    extension=${filename##*.}
 fi
 
 # Rewrite source file
