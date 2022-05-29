@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Cinny for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny) ![](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny) ![Working status](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)  
 [![Install Cinny with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cinny)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -24,13 +24,13 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 - Matrix Spaces support
 
 
-**Shipped version:** 2.0.0~ynh1
+**Shipped version:** 2.0.3~ynh1
 
 **Demo:** https://app.cinny.in
 
 ## Screenshots
 
-![](./doc/screenshots/cinny.jpg)
+![Screenshot of Cinny](./doc/screenshots/cinny.jpg)
 
 ## Disclaimers / important information
 
@@ -39,22 +39,23 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 
 ## Documentation and resources
 
-* Official app website: https://cinny.in
-* Official user documentation: https://cinny.in
-* Official admin documentation: https://cinny.in
-* Upstream app code repository: https://github.com/ajbura/cinny
-* YunoHost documentation for this app: https://yunohost.org/app_cinny
-* Report a bug: https://github.com/YunoHost-Apps/cinny_ynh/issues
+* Official app website: <https://cinny.in>
+* Official user documentation: <https://cinny.in>
+* Official admin documentation: <https://cinny.in>
+* Upstream app code repository: <https://github.com/ajbura/cinny>
+* YunoHost documentation for this app: <https://yunohost.org/app_cinny>
+* Report a bug: <https://github.com/YunoHost-Apps/cinny_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/cinny_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/cinny_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade cinny -u https://github.com/YunoHost-Apps/cinny_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
