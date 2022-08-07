@@ -14,7 +14,8 @@
         "demo": "https://app.cinny.in",
         "admindoc": "https://cinny.in",
         "userdoc": "https://cinny.in",
-        "code": "https://github.com/ajbura/cinny"
+        "code": "https://github.com/ajbura/cinny",
+        "cpe": "cpe:2.3:a:cinny_project:cinny"
     },
     "license": "GPL-3.0",
     "maintainer": {
