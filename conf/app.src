@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/cinnyapp/cinny/releases/download/v2.1.1/cinny-v2.1.1.tar.gz
-SOURCE_SUM=d516bee9458e0fb6ef44bed5970fdcbbb4b70b02ea0974d4507288e6413aef63
+SOURCE_URL=https://github.com/cinnyapp/cinny/releases/download/v2.1.2/cinny-v2.1.2.tar.gz
+SOURCE_SUM=51b2fd1cff74cdfb288ff0a5528045dbb9f9ce4bef378514e29c50bbc42ca140
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
