@@ -16,7 +16,7 @@
         "userdoc": "https://cinny.in",
         "code": "https://github.com/ajbura/cinny"
     },
-    "license": "GPL-3.0",
+    "license": "MIT",
     "maintainer": {
         "name": "Salamandar",
         "email": "felix@piedallu.me"
