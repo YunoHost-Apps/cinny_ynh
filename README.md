@@ -26,7 +26,6 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 
 **Shipped version:** 2.2.2~ynh1
 
-
 **Demo:** https://app.cinny.in
 
 ## Screenshots
