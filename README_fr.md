@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # Cinny pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)  
 [![Installer Cinny avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cinny)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Cinny rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Cinny rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Un client matrix orienté simplicité, élégance et sécurité.
 
@@ -28,9 +28,9 @@ Un client matrix orienté simplicité, élégance et sécurité.
 
 **Démo :** https://app.cinny.in
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Cinny](./doc/screenshots/cinny.jpg)
+![Capture d’écran de Cinny](./doc/screenshots/cinny.jpg)
 
 ## Avertissements / informations importantes
 
@@ -39,10 +39,10 @@ Un client matrix orienté simplicité, élégance et sécurité.
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://cinny.in>
+* Site officiel de l’app : <https://cinny.in>
 * Documentation officielle utilisateur : <https://cinny.in>
-* Documentation officielle de l'admin : <https://cinny.in>
-* Dépôt de code officiel de l'app : <https://github.com/ajbura/cinny>
+* Documentation officielle de l’admin : <https://cinny.in>
+* Dépôt de code officiel de l’app : <https://github.com/ajbura/cinny>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_cinny>
 * Signaler un bug : <https://github.com/YunoHost-Apps/cinny_ynh/issues>
 
@@ -58,4 +58,4 @@ ou
 sudo yunohost app upgrade cinny -u https://github.com/YunoHost-Apps/cinny_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
