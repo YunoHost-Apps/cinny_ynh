@@ -16,7 +16,7 @@ demo = "https://app.cinny.in"
 admindoc = "https://cinny.in"
 userdoc = "https://cinny.in"
 code = "https://github.com/ajbura/cinny"
-cpe = " cpe:2.3:a:cinny_project:cinny"
+cpe = "cpe:2.3:a:cinny_project:cinny"
 fund = "https://cinny.in/#sponsor"
 
 [integration]
