@@ -32,11 +32,6 @@ Un client matrix orienté simplicité, élégance et sécurité.
 
 ![Capture d’écran de Cinny](./doc/screenshots/cinny.jpg)
 
-## Avertissements / informations importantes
-
-* Il n'y a pas de support LDAP (et il n'y en aura jamais)
-* Cinny est uniquement un client Matrix, vous avez besoin d'un compte déjà existant sur un serveur (Yunohost propose une appli de serveur Synapse)
-
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://cinny.in>
