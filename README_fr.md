@@ -24,7 +24,7 @@ Un client matrix orienté simplicité, élégance et sécurité.
 - Support des "Espaces" Matrix
 
 
-**Version incluse :** 2.2.4~ynh1
+**Version incluse :** 2.2.4~ynh2
 
 **Démo :** https://app.cinny.in
 
