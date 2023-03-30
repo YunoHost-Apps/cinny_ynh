@@ -28,6 +28,11 @@ jobs:
           packages: python3-tomlkit
           version: 1.0
 
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: python3-tomlkit
+          version: 1.0
+
       - name: Run the updater script
         run: .github/workflows/updater.py
 
