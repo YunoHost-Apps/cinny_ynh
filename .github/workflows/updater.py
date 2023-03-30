@@ -11,9 +11,11 @@ You need to enable the action by removing `if ${{ false }}` in updater.yml!
 
 import hashlib
 import json
+import tomlkit
 import logging
 import os
 import re
+from pathlib import Path
 from subprocess import run, PIPE
 import textwrap
 from typing import List, Tuple, Any
@@ -86,8 +88,14 @@ def write_github_env(proceed: bool, new_version: str, branch: str):
         """))
 
 def main():
-    with open("manifest.json", "r", encoding="utf-8") as manifest_file:
-        manifest = json.load(manifest_file)
+    repository_path = Path(__file__).parent.parent.parent
+    manifest_toml = repository_path / "manifest.toml"
+    if manifest_toml.exists():
+        with open(manifest_toml, "r", encoding="utf-8") as manifest_file:
+            manifest = tomlkit.parse(manifest_file.read())
+    else:
+        with open("manifest.json", "r", encoding="utf-8") as manifest_file:
+            manifest = json.load(manifest_file)
     repo = manifest["upstream"]["code"]
 
     current_version = version.Version(manifest["version"].split("~")[0])
@@ -115,9 +123,13 @@ def main():
         handle_asset(asset)
 
     manifest["version"] = f"{latest_version}~ynh1"
-    with open("manifest.json", "w", encoding="utf-8") as manifest_file:
-        json.dump(manifest, manifest_file, indent=4, ensure_ascii=False)
-        manifest_file.write("\n")
+    if manifest_toml.exists():
+        with open(manifest_toml, "w", encoding="utf-8") as manifest_file:
+            tomlkit.dump(manifest, manifest_file)
+    else:
+        with open("manifest.json", "w", encoding="utf-8") as manifest_file:
+            json.dump(manifest, manifest_file, indent=4, ensure_ascii=False)
+            manifest_file.write("\n")
 
     write_github_env(True, latest_version, branch)
 
