@@ -35,14 +35,6 @@ chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
-# SPECIFIC UPGRADE
-#=================================================
-
-ynh_remove_nodejs || true
-ynh_remove_fail2ban_config
-ynh_app_setting_delete --app=$app --key=port
-
-#=================================================
 # NGINX CONFIGURATION
 #=================================================
 ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1
