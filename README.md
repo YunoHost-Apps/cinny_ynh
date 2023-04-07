@@ -31,7 +31,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 
 ## Screenshots
 
-![Screenshot of Cinny](./doc/screenshots/cinny.jpg)
+![Screenshot of Cinny](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 
