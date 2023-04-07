@@ -5,7 +5,7 @@ name = "Cinny"
 description.en = "Matrix client focusing primarily on simple, elegant and secure interface"
 description.fr = "Client matrix orienté simplicité, élégance et sécurité"
 
-version = "2.2.4~ynh2"
+version = "2.2.6~ynh1"
 
 maintainers = ["Salamandar"]
 
