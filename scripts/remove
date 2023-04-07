@@ -28,10 +28,6 @@ ynh_script_progression --message="Removing various files..." --weight=1
 ynh_secure_remove --file="/var/log/$app"
 
 #=================================================
-# GENERIC FINALIZATION
-#=================================================
-
-#=================================================
 # END OF SCRIPT
 #=================================================
 
