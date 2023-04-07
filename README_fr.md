@@ -31,7 +31,7 @@ Un client matrix orienté simplicité, élégance et sécurité.
 
 ## Captures d’écran
 
-![Capture d’écran de Cinny](./doc/screenshots/cinny.jpg)
+![Capture d’écran de Cinny](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
