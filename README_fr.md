@@ -36,8 +36,6 @@ Un client matrix orienté simplicité, élégance et sécurité.
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://cinny.in>
-* Documentation officielle utilisateur : <https://cinny.in>
-* Documentation officielle de l’admin : <https://cinny.in>
 * Dépôt de code officiel de l’app : <https://github.com/ajbura/cinny>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_cinny>
 * Signaler un bug : <https://github.com/YunoHost-Apps/cinny_ynh/issues>
