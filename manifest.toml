@@ -44,10 +44,16 @@ ram.runtime = "0M"
     default = "visitors"
 
 [resources]
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://github.com/cinnyapp/cinny/releases/download/v2.2.4/cinny-v2.2.4.tar.gz"
+        sha256 = "06ac4466023dbb1a14a65fc22768d25a3348a5f3f6377f760b887f9ae0658596"
+
     [resources.system_user]
 
     [resources.install_dir]
-    group = "www-data"
+    #group = "www-data"
 
     [resources.permissions]
     main.url = "/"
