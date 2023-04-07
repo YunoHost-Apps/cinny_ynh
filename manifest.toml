@@ -20,7 +20,7 @@ cpe = "cpe:2.3:a:cinny_project:cinny"
 fund = "https://cinny.in/#sponsor"
 
 [integration]
-yunohost = ">= 11.1.0"
+yunohost = ">= 11.1.17"
 architectures = "all"
 multi_instance = true
 ldap = false
