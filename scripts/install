@@ -36,6 +36,10 @@ ynh_script_progression --message="Configuring Cinny..." --weight=1
 # Copy over the Cinny configuration file
 ynh_add_config --template="../conf/cinny.json" --destination="$install_dir/config.json"
 
+# Fix any permissions in the install dir
+chmod -R o-rwx "$install_dir"
+chown -R $app:www-data "$install_dir"
+
 #=================================================
 # END OF SCRIPT
 #=================================================
