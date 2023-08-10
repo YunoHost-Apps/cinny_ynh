@@ -1,0 +1,7 @@
+{
+  "defaultHomeserver": 0,
+  "homeserverList": [
+    "__DEFAULT_HOME_SERVER__"
+  ],
+  "allowCustomHomeservers": true
+}

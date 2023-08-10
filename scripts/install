@@ -29,6 +29,14 @@ ynh_script_progression --message="Configuring NGINX web server..." --weight=1
 ynh_add_nginx_config
 
 #=================================================
+# CINNY CONFIGURATION
+#=================================================
+ynh_script_progression --message="Configuring Cinny..." --weight=1
+
+# Copy over the Cinny configuration file
+ynh_add_config --template="../conf/cinny.json" --destination="$install_dir/config.json"
+
+#=================================================
 # END OF SCRIPT
 #=================================================
 
