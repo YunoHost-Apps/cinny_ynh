@@ -6,7 +6,7 @@ name = "Cinny"
 description.en = "Matrix client focusing primarily on simple, elegant and secure interface"
 description.fr = "Client matrix orienté simplicité, élégance et sécurité"
 
-version = "3.0.0~ynh1"
+version = "3.1.0~ynh1"
 
 maintainers = ["Salamandar"]
 
@@ -54,8 +54,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/cinnyapp/cinny/releases/download/v3.0.0/cinny-v3.0.0.tar.gz"
-    sha256 = "46ed6385cbc5270792a5808313135915c806f66defc2d13e12e56699eeef6330"
+    url = "https://github.com/cinnyapp/cinny/releases/download/v3.1.0/cinny-v3.1.0.tar.gz"
+    sha256 = "0ab6ae4122bca3bde1cfe29fcc43af54f83f4ef1e58a360ac7b1cef0624dde4d"
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "cinny-v.*.tar.gz$"
 
