@@ -37,6 +37,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 
 * Official app website: <https://cinny.in>
 * Upstream app code repository: <https://github.com/ajbura/cinny>
+* YunoHost Store: <https://apps.yunohost.org/app/cinny>
 * Report a bug: <https://github.com/YunoHost-Apps/cinny_ynh/issues>
 
 ## Developer info
