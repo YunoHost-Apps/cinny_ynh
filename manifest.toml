@@ -38,7 +38,7 @@ ram.runtime = "50M"
 
     [install.default_home_server]
     ask.en = "Choose a default Matrix server for Cinny's login"
-    ask.fr = "Choisissez un serveur Matrix par défault"
+    ask.fr = "belp"
     help.en = "If you're running your own homeserver with Synapse, Dendrite, or Conduit you probably want this to be your homeserver's domain."
     type = "string"
     example = "my-own-homeserver.tld"
@@ -46,7 +46,7 @@ ram.runtime = "50M"
 
     [install.init_main_permission]
     help.en = "You will usually let visitors access Cinny so that anyone without a Yunohost account can log into Matrix."
-    help.fr = "Vous laisserez généralement les visiteurs accéder Cinny pour s'y connecter sans avoir de compte Yunohost."
+    help.fr = "belp"
     type = "group"
     default = "visitors"
 
