@@ -4,6 +4,8 @@ packaging_format = 2
 id = "cinny"
 name = "Cinny"
 description.en = "Matrix client focusing primarily on simple, elegant and secure interface"
+description.gl = "Cliente para Matrix que pon o foco na simplicidade, elegancia e seguridade da interface"
+description.ca = "Client de Matrix amb un focus en una interfície simple, elegant i segura"
 description.fr = "Client matrix orienté simplicité, élégance et sécurité"
 
 version = "3.2.0~ynh2"
@@ -38,14 +40,21 @@ ram.runtime = "50M"
 
     [install.default_home_server]
     ask.en = "Choose a default Matrix server for Cinny's login"
+    ask.gl = "Elixe o servidor Matrix por defecto no acceso con Cinny"
+    ask.ca = "Triar el servidor Matrix per defecte per l'inici de sessió de Cinny"
     ask.fr = "Choisissez un serveur Matrix par défault"
     help.en = "If you're running your own homeserver with Synapse, Dendrite, or Conduit you probably want this to be your homeserver's domain."
+    help.fr = "Si vous hébergez votre propre serveur avec Synapse, Dendrite ou Conduit, vous voulez probablement mettre ici le domaine de ce serveur."
+    help.gl = "Se estás a usar o teu propio servidor con Synapse, Dendrite ou Conduit, probablemente queres que aquí apareza o dominio do teu servidor."
+    help.ca = "Si teniu el vostre propi servidor amb Synapse, Dendrite o Conduit segurament voleu triar el domini del vostre servidor."
     type = "string"
     example = "my-own-homeserver.tld"
     default = "matrix.org"
 
     [install.init_main_permission]
     help.en = "You will usually let visitors access Cinny so that anyone without a Yunohost account can log into Matrix."
+    help.gl = "Normalmente permitese que as visitantes poidan acceder a Cinny para que calquera sen unha conta YunoHost poida acceder a Matrix."
+    help.ca = "Normalment es permet als visitants accés a Cinny, d'aquesta manera qualsevol persona sense un compte YunoHOst pot iniciar sessió a Matrix."
     help.fr = "Vous laisserez généralement les visiteurs accéder Cinny pour s'y connecter sans avoir de compte Yunohost."
     type = "group"
     default = "visitors"
