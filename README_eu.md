@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Cinny YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/cinny.svg)](https://ci-apps.yunohost.org/ci/apps/cinny/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)
 
 [![Instalatu Cinny YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cinny)
 
@@ -25,7 +25,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 - Matrix Spaces support
 
 
-**Paketatutako bertsioa:** 3.2.0~ynh2
+**Paketatutako bertsioa:** 4.0.0~ynh1
 
 **Demoa:** <https://app.cinny.in>
 
