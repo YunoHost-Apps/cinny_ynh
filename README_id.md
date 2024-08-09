@@ -25,7 +25,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 - Matrix Spaces support
 
 
-**Versi terkirim:** 4.0.0~ynh1
+**Versi terkirim:** 4.1.0~ynh1
 
 **Demo:** <https://app.cinny.in>
 
@@ -36,7 +36,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 ## Dokumentasi dan sumber daya
 
 - Website aplikasi resmi: <https://cinny.in>
-- Repositori kode aplikasi hulu: <https://github.com/ajbura/cinny>
+- Depot kode aplikasi hulu: <https://github.com/ajbura/cinny>
 - Gudang YunoHost: <https://apps.yunohost.org/app/cinny>
 - Laporkan bug: <https://github.com/YunoHost-Apps/cinny_ynh/issues>
 
