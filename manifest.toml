@@ -63,10 +63,9 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/cinnyapp/cinny/releases/download/v4.1.0/cinny-v4.1.0.tar.gz"
-    sha256 = "64bce650b1d5ee281e215f732fa40e40e2d38ebf8c2a8ed87ca0ae9ebe5ed788"
+    url = "https://github.com/ajbura/cinny/archive/refs/tags/v4.1.0.tar.gz"
+    sha256 = "468e7f769b68d81b8681647a84c5783f4683f1b75bcadf9eca99575f5f1de01b"
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "cinny-v.*.tar.gz$"
 
     [resources.system_user]
 

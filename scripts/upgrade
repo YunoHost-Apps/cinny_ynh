@@ -1,8 +1,6 @@
 #!/bin/bash
 
 #=================================================
-# GENERIC START
-#=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
 
@@ -10,15 +8,31 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Updating NodeJS..." --weight=5
+
+# Install Nodejs
+ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Upgrading source files..." --weight=1
 
 # Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep="config.json"
+ynh_setup_source --dest_dir="$install_dir/source" --full_replace=1 --keep="config.json"
 
 chmod -R o-rwx "$install_dir"
 chown -R "$app:www-data" "$install_dir"
+
+#=================================================
+# BUILD APP
+#=================================================
+ynh_script_progression --message="Rebuilding $app..." --weight=5
+
+_patch_build_config "$install_dir/source"
+_npm_build_install "$install_dir/source" "$install_dir/www"
 
 #=================================================
 # NGINX CONFIGURATION
