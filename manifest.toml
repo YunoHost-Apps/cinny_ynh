@@ -16,7 +16,7 @@ maintainers = ["Salamandar"]
 license = "MIT"
 website = "https://cinny.in"
 demo = "https://app.cinny.in"
-code = "https://github.com/ajbura/cinny"
+code = "https://github.com/cinnyapp/cinny"
 cpe = "cpe:2.3:a:cinny_project:cinny"
 fund = "https://cinny.in/#sponsor"
 
