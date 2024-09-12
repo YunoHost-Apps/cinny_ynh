@@ -8,7 +8,7 @@ description.gl = "Cliente para Matrix que pon o foco na simplicidade, elegancia 
 description.ca = "Client de Matrix amb un focus en una interfície simple, elegant i segura"
 description.fr = "Client matrix orienté simplicité, élégance et sécurité"
 
-version = "4.1.0~ynh1"
+version = "4.2.0~ynh1"
 
 maintainers = ["Salamandar"]
 
@@ -63,8 +63,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/ajbura/cinny/archive/refs/tags/v4.1.0.tar.gz"
-    sha256 = "468e7f769b68d81b8681647a84c5783f4683f1b75bcadf9eca99575f5f1de01b"
+    url = "https://github.com/ajbura/cinny/archive/refs/tags/v4.2.0.tar.gz"
+    sha256 = "a08a21972fb94c98381b272679930a2a202131dd4f76a88a597676a12eb2fa12"
     autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
