@@ -74,3 +74,4 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+test
