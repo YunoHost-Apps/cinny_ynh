@@ -36,7 +36,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 ## 文档与资源
 
 - 官方应用网站： <https://cinny.in>
-- 上游应用代码库： <https://github.com/ajbura/cinny>
+- 上游应用代码库： <https://github.com/cinnyapp/cinny>
 - YunoHost 商店： <https://apps.yunohost.org/app/cinny>
 - 报告 bug： <https://github.com/YunoHost-Apps/cinny_ynh/issues>
 
