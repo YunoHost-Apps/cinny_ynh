@@ -25,7 +25,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 - Matrix Spaces support
 
 
-**Поставляемая версия:** 4.1.0~ynh1
+**Поставляемая версия:** 4.2.0~ynh1
 
 **Демо-версия:** <https://app.cinny.in>
 
@@ -36,7 +36,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 ## Документация и ресурсы
 
 - Официальный веб-сайт приложения: <https://cinny.in>
-- Репозиторий кода главной ветки приложения: <https://github.com/ajbura/cinny>
+- Репозиторий кода главной ветки приложения: <https://github.com/cinnyapp/cinny>
 - Магазин YunoHost: <https://apps.yunohost.org/app/cinny>
 - Сообщите об ошибке: <https://github.com/YunoHost-Apps/cinny_ynh/issues>
 
