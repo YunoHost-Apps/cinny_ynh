@@ -34,9 +34,9 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/cinny"
+    # [install.path]
+    # type = "path"
+    # default = "/cinny"
 
     [install.default_home_server]
     ask.en = "Choose a default Matrix server for Cinny's login"
