@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Cinny voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/cinny.svg)](https://ci-apps.yunohost.org/ci/apps/cinny/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/cinny.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/cinny.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/cinny)](https://ci-apps.yunohost.org/ci/apps/cinny/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/cinny)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/cinny)
 
 [![Cinny met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cinny)
 
@@ -25,7 +27,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 - Matrix Spaces support
 
 
-**Geleverde versie:** 4.2.3~ynh1
+**Geleverde versie:** 4.3.0~ynh1
 
 **Demo:** <https://app.cinny.in>
 
