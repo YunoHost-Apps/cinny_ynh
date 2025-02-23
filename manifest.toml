@@ -8,7 +8,7 @@ description.gl = "Cliente para Matrix que pon o foco na simplicidade, elegancia 
 description.ca = "Client de Matrix amb un focus en una interfície simple, elegant i segura"
 description.fr = "Client matrix orienté simplicité, élégance et sécurité"
 
-version = "4.3.2~ynh1"
+version = "4.4.0~ynh1"
 
 maintainers = ["Salamandar"]
 
@@ -63,8 +63,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/cinnyapp/cinny/releases/download/v4.3.2/cinny-v4.3.2.tar.gz"
-    sha256 = "9fae5a308cb6682a12de6aa7664c707bbb3b87495e0055e491c7d0f1a8e68222"
+    url = "https://github.com/cinnyapp/cinny/releases/download/v4.4.0/cinny-v4.4.0.tar.gz"
+    sha256 = "88cf66ecb4fcaa89d20a25815ccbab992b9c6298ea988da192d15565a5a4bc30"
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "cinny-v.*.tar.gz$"
 
