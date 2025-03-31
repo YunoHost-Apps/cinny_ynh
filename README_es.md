@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Cinny para Yunohost
+# Cinny para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/cinny)](https://ci-apps.yunohost.org/ci/apps/cinny/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/cinny)
@@ -27,7 +27,7 @@ A Matrix client focusing primarily on simple, elegant and secure interface.
 - Matrix Spaces support
 
 
-**Versión actual:** 4.5.1~ynh1
+**Versión actual:** 4.6.0~ynh1
 
 **Demo:** <https://app.cinny.in>
 
