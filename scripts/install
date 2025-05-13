@@ -1,47 +1,31 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=1
+ynh_script_progression "Setting up source files..."
 
-# Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
-
-chmod -R o-rwx "$install_dir"
-chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring NGINX web server..." --weight=1
+ynh_script_progression "Configuring NGINX web server..."
 
-# Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # CINNY CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring Cinny..." --weight=1
+ynh_script_progression "Configuring Cinny..."
 
-# Copy over the Cinny configuration file
-ynh_add_config --template="../conf/cinny.json" --destination="$install_dir/config.json"
-
-# Fix any permissions in the install dir
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
+ynh_config_add --template="cinny.json" --destination="$install_dir/config.json"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
