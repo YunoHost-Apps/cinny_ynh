@@ -37,9 +37,9 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    # [install.path]
-    # type = "path"
-    # default = "/cinny"
+    [install.path]
+    type = "path"
+    default = "/cinny"
 
     [install.default_home_server]
     ask.en = "Choose a default Matrix server for Cinny's login"
@@ -64,12 +64,19 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources]
+        [resources.sources.main]
+        # This is not used as we are using git clone. It's only here for autoupdate.
+        url = "https://github.com/cinnyapp/cinny/releases/download/v4.8.0/cinny-v4.8.0.tar.gz"
+        sha256 = "1e2253eb4922a5442449a7ef452ec4c1903d6f475b3846bdc1b3fd93d17a80ad"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "cinny-v.*.tar.gz$"
 
-    [resources.sources.main]
-    url = "https://github.com/cinnyapp/cinny/releases/download/v4.8.0/cinny-v4.8.0.tar.gz"
-    sha256 = "1e2253eb4922a5442449a7ef452ec4c1903d6f475b3846bdc1b3fd93d17a80ad"
-    autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "cinny-v.*.tar.gz$"
+        [resources.sources.ynh_build]
+        url = "https://github.com/Yunohost-Apps/jsoncrack_ynh/releases/download/v2025.05.25-6c5a4f4d/jsoncrack.com_v2025.05.25-6c5a4f4d_ynh.zip"
+        sha256 = "733ccc6fc437befb770a6ad5752b0ebf0957528fd2a57bdc0213bdfbda15324c"
+        format = "zip"
+        extract = true
+        in_subdir = true
 
     [resources.system_user]
 

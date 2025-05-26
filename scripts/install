@@ -8,7 +8,10 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir" --source_id="ynh_build"
+
+# Replace path placeholder recursively in all files of the app folder
+grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@$newpath/@g"
 
 #=================================================
 # NGINX CONFIGURATION

@@ -12,7 +12,10 @@ fi
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="config.json"
+ynh_setup_source --dest_dir="$install_dir" --source_id="ynh_build" --full_replace --keep="config.json"
+
+# Replace path placeholder recursively in all files of the app folder
+grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@$newpath/@g"
 
 #=================================================
 # NGINX CONFIGURATION
