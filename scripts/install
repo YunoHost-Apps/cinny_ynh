@@ -10,8 +10,12 @@ ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --source_id="ynh_build"
 
+#Prepare $newpath for string replacement (empty if $path is root or $path if subdir is defined)
+newpath=""
+if [[ $path != '/' ]]; then newpath=$path; fi
+
 # Replace path placeholder recursively in all files of the app folder
-grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@$newpath/@g"
+grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@$newpath@g"
 
 #=================================================
 # NGINX CONFIGURATION
