@@ -1,0 +1,74 @@
+name: ynh-build-on-upstream-update
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs: 
+  ynh-app-release:
+    if: ${{ github.event.pull_request.user.login == 'yunohost-bot' && 
+            startsWith(github.event.pull_request.title, 'Upgrade ') }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }} # required for action add-and-commit below, cf. https://github.com/EndBug/add-and-commit#working-with-prs
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build release
+        id: build_release
+        run: | 
+          chmod +x scripts/build
+          ./scripts/build
+
+      - name: Extract changelog's URL from pull request's body
+        id: changelog_url
+        run : | 
+          URL=$(echo "${{ github.event.pull_request.body }}" | grep -o 'http[s]\?://[^ ]\+' | head -1)
+          echo "YNH_CHANGELOG_URL=${URL}" >> $GITHUB_OUTPUT
+
+      - name: Prepare draft release
+        id: draft_release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: ${{ steps.build_release.outputs.YNH_RELEASE_FILE }}
+          fail_on_unmatched_files: true
+          tag_name: ${{ steps.build_release.outputs.YNH_RELEASE_VERSION }}
+          draft: true
+          prerelease: false
+          make_latest: true
+          body: |
+            Version prebuilt for Yunohost using `scripts/build` and `.github/workflows/ynh-build-on-upstream-update.yml` in order to ensure sub-directory install compatibility and avoid build step on less powerful machines.
+            ### Changelog
+            Cf. upstream release note: ${{ steps.changelog_url.outputs.YNH_CHANGELOG_URL }}
+
+      - name: Replace URL & SHA256 in manifest.toml
+        run: |
+          sed -i '/\[resources.sources.ynh_build\]/,/sha256/ {
+              /url/s|=.*$|= "${{ steps.build_release.outputs.YNH_RELEASE_URL }}"|
+              /sha256/s|=.*$|= "${{ steps.build_release.outputs.YNH_RELEASE_SHA }}"|
+          }' manifest.toml
+
+      - name: Commit changes to manifest.toml
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'Update release in manifest'
+          add: 'manifest.toml'
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: |
+            Upstream upgrade is now built for YNH and ready to be released in the current repository: ${{ steps.draft_release.outputs.url }}
+            - [ ] Check that upstream upgrade is not likely to break the build script (or edit build script and relaunch app build using the "on-demand" workflow)
+            - [ ] Make sure the built release is published before testing this PR.
+            You may find additional information about this app upgrade's process in the repository's wiki.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
