@@ -15,7 +15,8 @@ newpath=""
 if [[ $path != '/' ]]; then newpath=$path; fi
 
 # Replace path placeholder recursively in all files of the app folder
-grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@https://$domain$newpath@g"
+#grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@https://$domain$newpath@g"
+grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@\.@g"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -30,7 +31,7 @@ ynh_config_add_nginx
 ynh_script_progression "Configuring Cinny..."
 
 ynh_config_add --template="cinny.json" --destination="$install_dir/config.json"
-chmod 600 "$install_dir/config.json"
+chmod 640 "$install_dir/config.json"
 chown "$app:www-data" "$install_dir/config.json"
 
 #=================================================
