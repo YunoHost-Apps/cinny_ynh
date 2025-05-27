@@ -30,6 +30,8 @@ ynh_config_add_nginx
 ynh_script_progression "Configuring Cinny..."
 
 ynh_config_add --template="cinny.json" --destination="$install_dir/config.json"
+chmod 600 "$install_dir/config.json"
+chown "$app:www-data" "$install_dir/config.json"
 
 #=================================================
 # END OF SCRIPT
