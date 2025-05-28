@@ -73,7 +73,7 @@ ram.runtime = "50M"
 
         [resources.sources.ynh_build]
         url = "https://github.com/oleole39/cinny_ynh/releases/download/v4.8.0/cinny_v4.8.0_ynh.zip"
-        sha256 = "374c302335bddd969c7ce6d86957ac2df7fc40382c35170d170f804c90a80920"
+        sha256 = "4fb51221b32591ab087c8e491bec2b159aedc125fae598561b3e1bf579d968ed"
         format = "zip"
         extract = true
         in_subdir = true
