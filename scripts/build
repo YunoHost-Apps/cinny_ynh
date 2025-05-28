@@ -44,7 +44,7 @@ tar --strip-components=1 -xvf "${build_folder}.tar.gz" -C "./${build_folder}/"
 # Adapt for YNH context
 pushd "$build_folder"
     # Prepare $domain$path replacement
-    sed -i "s|base: '/|base: '/__YNH_SUBDIR_PATH__/|g" "./build.config.ts"
+    sed -i "s|base: '/|base: '/__YNH_SUBDIR_PATH__|g" "./build.config.ts"
     #sed -i 's|"./|"./__YNH_SUBDIR_PATH__/|g' "./public/manifest.json"
 popd
 
