@@ -3,16 +3,19 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
-if [[ "$path" != "/" ]]; then
-    ynh_die "Installing Cinny on a subpath is not supported anymore (see https://github.com/YunoHost-Apps/cinny_ynh/pull/66)"
-fi
-
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="config.json"
+ynh_setup_source --dest_dir="$install_dir" --source_id="ynh_build" --full_replace --keep="config.json"
+
+#Prepare $newpath for string replacement (empty if $path is root or $path if subdir is defined)
+newpath=""
+if [[ $path != '/' ]]; then newpath=$path; fi
+
+# Replace path placeholder recursively in all files of the app folder
+grep -rli '/__YNH_SUBDIR_PATH__' $install_dir/* | xargs sed -i "s@/__YNH_SUBDIR_PATH__@$newpath@g"
 
 #=================================================
 # NGINX CONFIGURATION
