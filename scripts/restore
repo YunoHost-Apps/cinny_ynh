@@ -16,6 +16,8 @@ ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 ynh_script_progression "Restoring the app main directory..."
 
 ynh_restore "$install_dir"
+chgrp www-data "$install_dir/config.json"
+chmod g+r "$install_dir/config.json"
 
 #=================================================
 # RELOAD NGINX AND PHP-FPM
