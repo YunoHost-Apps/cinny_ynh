@@ -37,9 +37,9 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    # [install.path]
-    # type = "path"
-    # default = "/cinny"
+    [install.path]
+    type = "path"
+    default = "/cinny"
 
     [install.default_home_server]
     ask.en = "Choose a default Matrix server for Cinny's login"
@@ -71,6 +71,13 @@ ram.runtime = "50M"
     
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "cinny-v.*.tar.gz$"
+
+    [resources.sources.ynh_build]
+    url = "https://github.com/oleole39/cinny_ynh/releases/download/v4.10.1/cinny_v4.10.1_ynh.zip"
+    sha256 = "a80aae67791bf90d9c26970c575f97dd7c63b6d6217420d36b6fc265decc689c"
+    format = "zip"
+    extract = true
+    in_subdir = true
 
     [resources.system_user]
 
