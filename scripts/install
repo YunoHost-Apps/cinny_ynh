@@ -15,7 +15,7 @@ if [[ $path != '/' ]]; then newpath=$path; fi
 
 # Replace path placeholder recursively in all files of the app folder
 match_regex="/?__YNH_DOMAIN____YNH_SUBDIR_PATH__"
-grep --extended-regexp --recursive --files-with-matches --ignore-case "$match_regex" $install_dir/* | xargs -d '\n' sed --regexp-extended --in-place "s@$match_regex@https://$domain$newpath@g"
+grep --extended-regexp --recursive --files-with-matches --ignore-case "$match_regex" $install_dir/* | xargs -d '\n' sed --regexp-extended --in-place "s@$match_regex@$newpath@g"
 
 #=================================================
 # NGINX CONFIGURATION
