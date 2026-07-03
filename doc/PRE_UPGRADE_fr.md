@@ -1,0 +1,1 @@
+Veuillez noter que la disponiblité de l'installation sur un sous-chemin a été restaurée avec Cinny v4.8.0~ynh2. Autrement dit, l'application peut désormais à nouveau être installée à l'adresse https://domain.tld/cinny et ne nécessite plus son propre domaine/sous-domaine).
