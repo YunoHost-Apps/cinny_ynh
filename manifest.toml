@@ -73,8 +73,8 @@ ram.runtime = "50M"
     autoupdate.asset = "cinny-v.*.tar.gz$"
 
     [resources.sources.ynh_build]
-    url = "https://github.com/oleole39/cinny_ynh/releases/download/v4.12.7/cinny_v4.12.7_ynh.zip"
-    sha256 = "056d7b931672b9382829ebedc1a31688f71ec5a492e8279f7d24de6272eba0a7"
+    url = "https://github.com/oleole39/cinny_ynh/releases/download/v4.12.8/cinny_v4.12.8_ynh.zip"
+    sha256 = "f2461b5a0679a5182b54831d76fd474c4a1fee7abdca13f4596f9647cf823493"
     format = "zip"
     extract = true
     in_subdir = true
