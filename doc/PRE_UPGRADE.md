@@ -1,0 +1,1 @@
+Please note that the availability of subpath install was restored with Cinny v4.8.0~ynh2. That is to say it can now be installed again as https://domain.tld/cinny and doesn't require its own domain/subdomain anymore.
